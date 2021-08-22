@@ -1,0 +1,312 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+    font-size: 0.865rem;
+    background: #040b14;
+    color: white;
+}
+
+:root {
+    --color-text: #149ddd;
+}
+
+.wrapper {
+    width: 100vw;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main,
+header,
+div,
+section,
+article,
+footer,
+nav {
+    display: block;
+}
+
+header {
+    padding: 2rem 0rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+img {
+    vertical-align: middle;
+}
+
+header div.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.name-desc {
+    width: 65%;
+}
+
+.name-desc h1.name {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.name-desc p {
+    padding-top: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.profile-details {
+    width: 30%;
+}
+
+.profile-details .address-email {
+    line-height: 1.65;
+    padding-bottom: 1.32rem;
+}
+
+address {
+    font-weight: 300;
+    font-size: 0.85rem;
+}
+
+span.phone-number,
+span.email {
+    font-size: 0.76rem;
+    font-weight: 600;
+}
+
+span.font-awesome {
+    padding-left: 0.62rem;
+}
+
+div.social-links {
+    padding-left: 1.5rem;
+    line-height: 1.65;
+    font-size: 0.85rem;
+}
+
+h3 {
+    font-size: 1.325rem;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+section {
+    margin-top: 1.525rem;
+    margin-bottom: 1rem;
+}
+
+main div.wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.experience-education {
+    width: 65%;
+}
+
+.projects-skills-language {
+    width: 30%;
+}
+
+.work-experience,
+.education-desc {
+    width: 100%;
+    margin-top: 1.625rem;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.heading-img {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-bottom: 0.65rem;
+}
+
+.heading-img h4 {
+    padding-left: 0.75rem;
+}
+
+.heading-img img {
+    max-width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-position: center;
+    display: block;
+}
+
+.work-experience p,
+.education-desc p {
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.work-experience p.date,
+.education-desc p.date {
+    font-size: 0.73rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+ul.desc,
+ul.cert-date {
+    list-style-type: '✔ ';
+}
+
+ul.desc,
+ul.skills-list,
+ul.strength-list,
+ul.lang-list,
+ul.cert-date {
+    padding-left: 1.65rem;
+    padding-top: 1.125rem;
+    line-height: 1.65;
+}
+
+ul.skills-list,
+ul.strength-list,
+ul.lang-list {
+    list-style-type: '❤ ';
+}
+
+.project-links {
+    text-decoration: underline;
+}
+
+.project-listing,
+.code,
+.strength,
+.lang,
+.desc-cert {
+    margin-top: 1.625rem;
+}
+
+.project-listing p {
+    line-height: 1.65;
+    padding-top: 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .wrapper {
+        max-width: 950px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 1120px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        max-width: 1320px;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 767px) {
+    header div.wrapper {
+        flex-flow: column;
+    }
+    .name-desc {
+        width: 100%;
+        text-align: center;
+    }
+    .profile-details {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    div.social-links {
+        padding-left: 0rem;
+    }
+    main div.wrapper {
+        flex-flow: column;
+        width: 100%;
+    }
+    .experience-education {
+        width: 100%;
+    }
+    .projects-skills-language {
+        width: 100%;
+    }
+}
+
+
+/* ===== CONTACT =====*/
+
+.contact__input {
+    width: 100%;
+    font-size: 14px;
+    padding: .75rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-text);
+    outline: none;
+    margin-top: 18px;
+}
+
+.contact__button {
+    font-size: 20px;
+    cursor: pointer;
+    width: 140px;
+    margin-left: auto;
+    height: 50px;
+    background-color: #149ddd;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.contact__form {
+    width: 360px;
+}
+
+.contact__container {
+    justify-items: center;
+}
