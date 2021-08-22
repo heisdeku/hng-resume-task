@@ -9,4 +9,4 @@
 
 <hr />
 
-#### Live Demo - [Oluwaferanmi CV / Portfolio Version One](https://deku-resume-v1.netlify.app/)
+#### Live Demo - [Oluwaferanmi CV / Portfolio Version One](https://deku-resume.netlify.app/)
